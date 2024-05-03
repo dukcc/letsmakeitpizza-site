@@ -3,7 +3,11 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Faisons De La Il Pizza!">
-	<div class="p-32 w-full h-screen border border-black flex flex-col justify-center">
-		<h1 class="text-[128px] text-white mix-blend-difference">Faisons De La Il Pizza!</h1>
+	<div class="p-32 w-full h-screen border border-black grid grid-cols-2">
+		<div class="flex flex-col gap-12 w-full h-full justify-center">
+			<h1 class="text-[128px] text-white mix-blend-difference leading-none whitespace-nowrap z-40">Faisons De La Il Pizza!</h1>
+			<h3 class="text-[48px]">Cuisine</h3>
+		</div>
+		<img src="/bus.png" alt="Bus" class="w-full h-full object-cover object-left">
 	</div>
 </Layout>
