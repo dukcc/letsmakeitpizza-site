@@ -11,10 +11,44 @@ import * as MenuItem from "../components/MenuItem"
         <MenuItem.Item title="Ommelete au jambon et fromage" price="3,25€" />
         <MenuItem.Item title="Crêpes" price="3,25€" />
     </div>
+    <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+        <MenuItem.Section title="Déjeuner" times="12h00-15h30" />
+        <MenuItem.Item title="Pizza sur baguette" price="5,00€" />
+        <MenuItem.Item title="Bouchées de pizza baguette" price="4,25€" serving="5 pièces" />
+        <MenuItem.Item title="Crêpes" price="3,25€" />
+    </div>
+    <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+        <MenuItem.Section title="Pizzas" times="9h00-19h30" />
+        <MenuItem.ItemSection title="Pizzas spéciales" />
+        <MenuItem.Item sub title="Pissaladière" price="3,00€" serving="par 1 tranche" />
+        <MenuItem.ItemSection title="Pizzas classiques" />
+        <MenuItem.Item sub title="Napolitaine" price="2,75€" serving="par 1 tranche" />
+        <MenuItem.Item sub title="Pepperoni" price="2,66€" serving="par 1 tranche" />
+        <MenuItem.Item sub title="Fromage" price="2,50€" serving="par 1 tranche" />
+        <MenuItem.Item sub title="Amateurs de viande" price="2,75€" serving="par 1 tranche" />
+    </div>
+    <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+        <MenuItem.Section title="Côtés" times="12h00-19h30" />
+        <MenuItem.Item title="Frites" price="2,00€" />
+        <MenuItem.Item title="Salade César" price="2,25€" />
+        <MenuItem.Item title="Spaghetti" price="5,25€" />
+        <MenuItem.Item title="Fettuccine Alfredo" price="5,25€" />
+        <MenuItem.Item title="Baguette" price="1,25€" />
+    </div>
+    <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+        <MenuItem.Section title="Dessert" times="16h00-19h30" />
+        <MenuItem.Item title="Crème glacée à la vanille avec des fraises" price="3,50€" />
+        <MenuItem.Item title="Crêpes et glacesr" price="4,25€" />
+    </div>
+    <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+        <div class="bg-brand px-24 py-8"><p class="text-[16px]">Dites "Faisons de la il pizza!" dans un accent Italien et obtenez une boisson gratuite!</p></div>
+        <MenuItem.Section title="Boissons" times="8h00-19h30" />
+        <MenuItem.Item title="Eau" price="0,50€" />
+        <MenuItem.Item title="Café" price="0,50€" />
+        <MenuItem.ItemSection title="Soda" />
+        <MenuItem.Item sub title="Coca-cola" price="1,00€" />
+        <MenuItem.Item sub title="Sprite" price="1,00€" />
+        <MenuItem.Item sub title="Orange" price="1,00€" />
+        <MenuItem.Item sub title="Root-beer" price="1,00€" />
+    </div>
 </Layout>
-<div class="flex flex-col py-32 gap-12 px-128 border border-black">
-    <MenuItem.Section title="Déjeuner" times="12h00-15h30" />
-    <MenuItem.Item title="Pizza sur baguette" price="5,00€" />
-    <MenuItem.Item title="Bouchées de pizza baguette" price="4,25€" />
-    <MenuItem.Item title="Crêpes" price="3,25€" />
-</div>
