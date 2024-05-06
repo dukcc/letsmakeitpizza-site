@@ -1,8 +1,8 @@
 ---
-import Nav from '../components/Nav';
+import Nav from "../components/Nav";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -10,25 +10,25 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Let's make it pizza!" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta http-equiv="content-language" content="fr-ca">
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="bg-bg flex flex-col p-16 gap-16 overflow-x-hidden w-screen">
-		<Nav />
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Let's make it pizza!" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="content-language" content="fr-ca" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-bg flex flex-col p-16 gap-16 overflow-x-hidden w-screen">
+    <Nav client:load />
+    <slot />
+  </body>
 </html>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 
-body {
-  font-family: "Instrument Serif", serif;
-}
+  body {
+    font-family: "Instrument Serif", serif;
+  }
 </style>

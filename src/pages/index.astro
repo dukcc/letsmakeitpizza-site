@@ -1,15 +1,33 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Button from '../components/Button';
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button";
 ---
 
 <Layout title="Faisons De La Il Pizza!">
-	<div class="p-32 w-full h-screen border border-black grid grid-cols-2">
-		<div class="flex flex-col gap-12 w-full h-full justify-center">
-			<h1 class="text-[128px] text-white mix-blend-difference leading-none whitespace-nowrap z-40">Faisons De La Il Pizza!</h1>
-			<h3 class="text-[48px]">Cuisine Française et Italienne</h3>
-			<div class="flex gap-16"><Button text='Commande' link='/' colour='primary' /><Button text='Menu' link='/menu' colour='secondary' /></div>
-		</div>
-		<img src="/bus.png" alt="Bus" class="w-full h-full brightness-75 object-cover object-left">
-	</div>
+  <div
+    class="p-32 w-full h-screen border border-black grid grid-cols-2 max-[700px]:grid-cols-1"
+  >
+    <div class="flex flex-col gap-12 w-full h-full justify-center">
+      <h1
+        class="text-[128px] max-[1050px]:text-[64px] text-white mix-blend-difference leading-none whitespace-nowrap max-[700px]:whitespace-normal z-40"
+      >
+        Faisons De La Il Pizza!
+      </h1>
+      <h3 class="text-[48px] max-[1050px]:text-[32px]">
+        Cuisine Française et Italienne
+      </h3>
+      <div class="flex gap-16">
+        <Button text="Commande" link="/" colour="primary" /><Button
+          text="Menu"
+          link="/menu"
+          colour="secondary"
+        />
+      </div>
+    </div>
+    <img
+      src="/bus.png"
+      alt="Bus"
+      class="w-full h-full brightness-75 object-cover object-left"
+    />
+  </div>
 </Layout>
