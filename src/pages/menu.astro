@@ -4,10 +4,12 @@ import * as MenuItem from "../components/MenuItem";
 ---
 
 <Layout title="Menu">
-  <div class="flex px-128 border border-black">
+  <div class="flex px-128 max-[940px]:px-24 border border-black">
     <h1 class="text-[128px]">Menu</h1>
   </div>
-  <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+  <div
+    class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
+  >
     <MenuItem.Section title="Petit déjeuner" times="8h00-11h40" />
     <MenuItem.Item
       client:visible
@@ -21,7 +23,9 @@ import * as MenuItem from "../components/MenuItem";
     />
     <MenuItem.Item client:visible title="Crêpes" price="3,25€" />
   </div>
-  <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+  <div
+    class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
+  >
     <MenuItem.Section title="Déjeuner" times="12h00-15h30" />
     <MenuItem.Item client:visible title="Pizza sur baguette" price="5,00€" />
     <MenuItem.Item
@@ -32,7 +36,9 @@ import * as MenuItem from "../components/MenuItem";
     />
     <MenuItem.Item client:visible title="Crêpes" price="3,25€" />
   </div>
-  <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+  <div
+    class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
+  >
     <MenuItem.Section title="Pizzas" times="9h00-19h30" />
     <MenuItem.ItemSection title="Pizzas spéciales" />
     <MenuItem.Item
@@ -66,7 +72,9 @@ import * as MenuItem from "../components/MenuItem";
       serving="par 1 tranche"
     />
   </div>
-  <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+  <div
+    class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
+  >
     <MenuItem.Section title="Côtés" times="12h00-19h30" />
     <MenuItem.Item client:visible title="Frites" price="2,00€" />
     <MenuItem.Item client:visible title="Salade César" price="2,25€" />
@@ -74,7 +82,9 @@ import * as MenuItem from "../components/MenuItem";
     <MenuItem.Item client:visible title="Fettuccine Alfredo" price="5,25€" />
     <MenuItem.Item client:visible title="Baguette" price="1,25€" />
   </div>
-  <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+  <div
+    class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
+  >
     <MenuItem.Section title="Dessert" times="16h00-19h30" />
     <MenuItem.Item
       client:visible
@@ -83,7 +93,9 @@ import * as MenuItem from "../components/MenuItem";
     />
     <MenuItem.Item client:visible title="Crêpes et glacesr" price="4,25€" />
   </div>
-  <div class="flex flex-col py-32 gap-12 px-128 border border-black">
+  <div
+    class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
+  >
     <div class="bg-brand px-24 py-8">
       <p class="text-[16px]">
         Dites "Faisons de la il pizza!" dans un accent Italien et obtenez une
