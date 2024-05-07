@@ -21,20 +21,36 @@ import * as MenuItem from "../components/MenuItem";
       title="Ommelete au jambon et fromage"
       price="3,25€"
     />
-    <MenuItem.Item client:visible title="Crêpes" price="3,25€" />
+    <MenuItem.Item
+      client:visible
+      title="Crêpes"
+      price="3,25€"
+      desc="Savoureuses crêpes aux fruits."
+    />
   </div>
   <div
     class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
   >
     <MenuItem.Section title="Déjeuner" times="12h00-15h30" />
-    <MenuItem.Item client:visible title="Pizza sur baguette" price="5,00€" />
+    <MenuItem.Item
+      client:visible
+      title="Pizza sur baguette"
+      price="5,00€"
+      desc="Une baguette française avec sauce tomate, jambon, mozzarella et parmesan"
+    />
     <MenuItem.Item
       client:visible
       title="Bouchées de pizza baguette"
+      desc="Petits morceaux de baguette avec sauce tomate, mozzarella et parmesan"
       price="4,25€"
       serving="5 pièces"
     />
-    <MenuItem.Item client:visible title="Crêpes" price="3,25€" />
+    <MenuItem.Item
+      client:visible
+      title="Crêpes"
+      desc="Savoureuses crêpes aux fruits."
+      price="3,25€"
+    />
   </div>
   <div
     class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
@@ -56,6 +72,7 @@ import * as MenuItem from "../components/MenuItem";
       title="Napolitaine"
       price="2,75€"
       serving="par 1 tranche"
+      desc="La tranche napolitaine italienne classique. Ingrédients: pâte à pizza, sauce tomate, mozzarella, herbes"
     />
     <MenuItem.Item
       client:visible
@@ -63,25 +80,51 @@ import * as MenuItem from "../components/MenuItem";
       title="Pepperoni"
       price="2,66€"
       serving="par 1 tranche"
+      desc="Le pepperoni est trop classique pour ne pas l'inclure ici. Ingrédients: pâte à pizza, sauce tomate, pepperoni, mozzarella, chedder, herbes"
     />
-    <MenuItem.Item sub title="Fromage" price="2,50€" serving="par 1 tranche" />
     <MenuItem.Item
       client:visible
       sub
-      title="Amateurs de viande"
-      price="2,75€"
+      title="Fromage"
+      price="2,66€"
       serving="par 1 tranche"
+      desc="The cheese is too classic to not include here. Ingredients: Pizza dough, tomato sauce, mozzarella, chedder, parmesan, herbs"
     />
   </div>
   <div
     class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
   >
     <MenuItem.Section title="Côtés" times="12h00-19h30" />
-    <MenuItem.Item client:visible title="Frites" price="2,00€" />
-    <MenuItem.Item client:visible title="Salade César" price="2,25€" />
-    <MenuItem.Item client:visible title="Spaghetti" price="5,25€" />
-    <MenuItem.Item client:visible title="Fettuccine Alfredo" price="5,25€" />
-    <MenuItem.Item client:visible title="Baguette" price="1,25€" />
+    <MenuItem.Item
+      client:visible
+      title="Frites"
+      price="2,00€"
+      desc="Belles frites salées. Ingrédients: Potatos, sel, huile de cuisson"
+    />
+    <MenuItem.Item
+      client:visible
+      title="Salade César"
+      price="2,25€"
+      desc="Salade de ceasar savoureuse. Ingrédients: laitue romaine, vinaigrette de ceasar, pain, parmesan"
+    />
+    <MenuItem.Item
+      client:visible
+      title="Spaghetti"
+      price="5,25€"
+      desc="Un bon spaghetti simple et savoureux. Ingrédients: Spaghetti, sauce tomate, boeuf haché, assaisonnements, parmesan"
+    />
+    <MenuItem.Item
+      client:visible
+      title="Fettuccine Alfredo"
+      price="5,25€"
+      desc="Fettuccine agréable, savoureuse et crémeuse. Ingrédients: pâtes fettuccine, beurre, crème, parmesan, assaisonnements"
+    />
+    <MenuItem.Item
+      client:visible
+      title="Baguette"
+      price="1,25€"
+      desc="La baguette française classique."
+    />
   </div>
   <div
     class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
@@ -92,7 +135,12 @@ import * as MenuItem from "../components/MenuItem";
       title="Crème glacée à la vanille avec des fraises"
       price="3,50€"
     />
-    <MenuItem.Item client:visible title="Crêpes et glacesr" price="4,25€" />
+    <MenuItem.Item
+      client:visible
+      title="Crêpes et glacesr"
+      price="4,25€"
+      desc="Crêpes à la crème glacée à la vanille, garnies de crème et de sirop d'érable."
+    />
   </div>
   <div
     class="flex flex-col py-32 gap-12 px-128 max-[940px]:px-24 border border-black"
