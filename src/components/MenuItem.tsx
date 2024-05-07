@@ -22,7 +22,7 @@ export function Item({
     <div className={`w-full flex flex-col ${sub ? "pl-24" : ""}`}>
       <button
         onClick={toggleOpen}
-        className="flex gap-32 items-center hover:translate-x-8 duration-200 ease-out"
+        className="flex max-[650px]:flex-wrap max-[650px]:gap-12 gap-32 items-center hover:translate-x-8 duration-200 ease-out"
       >
         <h4 className="whitespace-nowrap text-[32px] max-[670px]:text-[16px]">
           {title}
@@ -35,7 +35,11 @@ export function Item({
           {price}
         </h4>
       </button>
-      <div className={isOpen ? "flex justify-between" : "hidden"}>
+      <div
+        className={
+          isOpen ? "flex justify-between max-[600px]:flex-col gap-12" : "hidden"
+        }
+      >
         <p className="text-[16px]">{desc}</p>
         <Button colour="primary" text="commande" link="#" />
       </div>
